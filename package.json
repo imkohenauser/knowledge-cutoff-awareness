@@ -24,13 +24,13 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "test": "node .agent/skills/knowledge-cutoff-awareness/scripts/get_date.js"
+    "test": "node tests/test_get_date.js"
   },
   "keywords": [
-    "agent",
-    "ai",
-    "temporal-awareness",
-    "knowledge-cutoff"
+    "antigravity",
+    "agent-skill",
+    "knowledge-cutoff",
+    "date-utility"
   ],
   "author": "imkohenauser",
   "license": "MIT"

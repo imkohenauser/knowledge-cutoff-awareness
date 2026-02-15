@@ -28,14 +28,20 @@ if (!fs.existsSync(targetBaseDir)) {
 // Recursive copy function
 function copyFolderSync(from, to) {
   if (!fs.existsSync(to)) {
-    fs.mkdirSync(to);
+    fs.mkdirSync(to, { recursive: true });
   }
 
   fs.readdirSync(from).forEach(element => {
-    if (fs.lstatSync(path.join(from, element)).isFile()) {
-      fs.copyFileSync(path.join(from, element), path.join(to, element));
+    // Skip system files
+    if (element === '.DS_Store' || element === 'Thumbs.db') return;
+
+    const fromPath = path.join(from, element);
+    const toPath = path.join(to, element);
+
+    if (fs.lstatSync(fromPath).isFile()) {
+      fs.copyFileSync(fromPath, toPath);
     } else {
-      copyFolderSync(path.join(from, element), path.join(to, element));
+      copyFolderSync(fromPath, toPath);
     }
   });
 }

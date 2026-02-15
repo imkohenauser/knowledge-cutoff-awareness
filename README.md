@@ -1,4 +1,6 @@
-# knowledge-cutoff-awareness
+# Knowledge Cutoff Awareness
+
+> Created for **Google Antigravity IDE**.
 
 A lightweight skill set to give AI agents "current time awareness".
 
@@ -34,3 +36,15 @@ git clone https://github.com/imkohenauser/knowledge-cutoff-awareness.git .agent/
 
 Once installed, the agent will automatically recognize this skill (if the `.agent/skills` path is configured).
 See [SKILL.md](./.agent/skills/knowledge-cutoff-awareness/SKILL.md) for details.
+
+## Agent Skills
+
+This project is an **Agent Skill**. Skills are an open standard for extending agent capabilities. A skill is a folder containing a `SKILL.md` file with instructions that the agent can follow when working on specific tasks.
+
+References:
+- https://agentskills.io/home
+- https://antigravity.google/docs/skills
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

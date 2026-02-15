@@ -18,6 +18,19 @@ let format = 'iso';
 
 // Parse arguments
 for (const arg of args) {
+  if (arg === '--help' || arg === '-h') {
+    console.log(`
+Usage: node get_date.js [offset] [format]
+
+Arguments:
+  offset: Optional. Relative date adjustment.
+          Examples: "+1d" (add 1 day), "-2w" (subtract 2 weeks), "yesterday", "tomorrow"
+          Supported units: d (days), w (weeks), m (months), y (years)
+  format: Optional. Output format. "iso" (default) or "human".
+`);
+    process.exit(0);
+  }
+
   if (arg === 'iso' || arg === 'human') {
     format = arg;
     continue;
@@ -52,11 +65,13 @@ for (const arg of args) {
         break;
       case 'm':
         targetDate.setMonth(targetDate.getMonth() + (sign * value));
-        break; // Note: This might have edge cases for end-of-month, but standard JS behavior applies
+        break;
       case 'y':
         targetDate.setFullYear(targetDate.getFullYear() + (sign * value));
         break;
     }
+  } else {
+    console.warn(`Warning: Unrecognized argument "${arg}" ignored.`);
   }
 }
 
