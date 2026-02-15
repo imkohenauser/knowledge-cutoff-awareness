@@ -1,0 +1,30 @@
+{
+  "name": "knowledge-cutoff-awareness",
+  "version": "1.0.0",
+  "description": "Empower AI agents with current system time to bridge the knowledge cutoff gap.",
+  "main": "index.js",
+  "bin": {
+    "knowledge-cutoff-awareness-install": "./bin/install.js"
+  },
+  "files": [
+    ".agent",
+    "bin",
+    "index.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imkohenauser/knowledge-cutoff-awareness.git"
+  },
+  "scripts": {
+    "test": "node .agent/skills/knowledge-cutoff-awareness/scripts/get_date.js"
+  },
+  "keywords": [
+    "agent",
+    "ai",
+    "temporal-awareness",
+    "knowledge-cutoff"
+  ],
+  "author": "imkohenauser",
+  "license": "MIT"
+}
