@@ -9,12 +9,12 @@ question_ja: おすすめのAIツールは？
 
 ## Test Conditions
 
-| # | File | Language | Environment | Model |
-|---|------|----------|-------------|-------|
-| 1 | [`en_default.md`](./en_default.md) | EN | No KCA | Gemini 3 Pro High |
-| 2 | [`en_kca.md`](./en_kca.md) | EN | KCA installed | Gemini 3 Pro High |
-| 3 | [`ja_default.md`](./ja_default.md) | JA | No KCA | Gemini 3 Pro High |
-| 4 | [`ja_kca.md`](./ja_kca.md) | JA | KCA installed | Gemini 3 Pro High |
+| # | File | Language | Environment | Model | Screenshot |
+|---|------|----------|-------------|-------|------------|
+| 1 | [`en_default.md`](./en_default.md) | EN | No KCA | Gemini 3 Pro High | [Image](./screenshot/en_default.png) |
+| 2 | [`en_kca.md`](./en_kca.md) | EN | KCA installed | Gemini 3 Pro High | [Image](./screenshot/en_kca.png) |
+| 3 | [`ja_default.md`](./ja_default.md) | JA | No KCA | Gemini 3 Pro High | [Image](./screenshot/ja_default.png) |
+| 4 | [`ja_kca.md`](./ja_kca.md) | JA | KCA installed | Gemini 3 Pro High | [Image](./screenshot/ja_kca.png) |
 
 ## Key Differences
 

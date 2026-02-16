@@ -41,8 +41,23 @@ See [SKILL.md](./.agent/skills/knowledge-cutoff-awareness/SKILL.md) for details.
 
 Does it actually help? Yes. We tested the impact of this skill on an AI agent's ability to answer questions about the latest AI tools (as of Feb 2026).
 
-- **Without KCA**: The agent relied on outdated training data.
-- **With KCA**: The agent recognized the date, performed a web search, and provided accurate, up-to-date recommendations.
+### Without KCA
+The agent relied on outdated training data.
+
+<p align="center">
+  <img src="./performance/20260215_ai_tool_questions/screenshot/en_default.png" alt="Screenshot" width="600">
+  <br>
+  <em>(No KCA, Model: Gemini 3 Pro High)</em>
+</p>
+
+### With KCA
+The agent recognized the date, performed a web search, and provided accurate, up-to-date recommendations.
+
+<p align="center">
+  <img src="./performance/20260215_ai_tool_questions/screenshot/en_kca.png" alt="Screenshot" width="600">
+  <br>
+  <em>(With KCA, Model: Gemini 3 Pro High)</em>
+</p>
 
 See the full [Performance Test Results](./performance/20260215_ai_tool_questions/README.md).
 

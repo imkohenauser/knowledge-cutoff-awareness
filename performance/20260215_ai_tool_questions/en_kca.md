@@ -9,6 +9,12 @@ question: What AI tools do you recommend?
 
 # Performance Test — EN / KCA
 
+<p align="center">
+  <img src="screenshot/en_kca.png" alt="Screenshot" width="600">
+  <br>
+  <em>(With KCA, Model: Gemini 3 Pro High)</em>
+</p>
+
 ## User Input
 
 > What AI tools do you recommend?

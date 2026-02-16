@@ -9,6 +9,12 @@ question: おすすめのAIツールは？
 
 # Performance Test — JA / Default (No KCA)
 
+<p align="center">
+  <img src="screenshot/ja_default.png" alt="Screenshot" width="600">
+  <br>
+  <em>(No KCA, Model: Gemini 3 Pro High)</em>
+</p>
+
 ## User Input
 
 > 質問です。おすすめのAIツールは？
