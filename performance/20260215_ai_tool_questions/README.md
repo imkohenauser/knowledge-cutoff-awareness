@@ -16,6 +16,13 @@ question_ja: おすすめのAIツールは？
 | 3 | [`ja_default.md`](./ja_default.md) | JA | No KCA | Gemini 3 Pro High | [Image](./screenshot/ja_default.png) |
 | 4 | [`ja_kca.md`](./ja_kca.md) | JA | KCA installed | Gemini 3 Pro High | [Image](./screenshot/ja_kca.png) |
 
+### Environment Settings
+
+The following Antigravity settings (accessible via the bottom-right corner of the window) were configured under the **History** section:
+
+- **Conversation History**: Off
+- **Knowledge**: Off
+
 ## Key Differences
 
 | Aspect | Default (No KCA) | KCA Installed |
