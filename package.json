@@ -30,8 +30,10 @@
     "antigravity",
     "agent-skill",
     "knowledge-cutoff",
-    "date-utility"
+    "date-utility",
+    "ai-agent",
+    "system-time"
   ],
-  "author": "imkohenauser",
+  "author": "Kohei Saito",
   "license": "MIT"
 }

@@ -37,6 +37,15 @@ git clone https://github.com/imkohenauser/knowledge-cutoff-awareness.git .agent/
 Once installed, the agent will automatically recognize this skill (if the `.agent/skills` path is configured).
 See [SKILL.md](./.agent/skills/knowledge-cutoff-awareness/SKILL.md) for details.
 
+## Performance
+
+Does it actually help? Yes. We tested the impact of this skill on an AI agent's ability to answer questions about the latest AI tools (as of Feb 2026).
+
+- **Without KCA**: The agent relied on outdated training data.
+- **With KCA**: The agent recognized the date, performed a web search, and provided accurate, up-to-date recommendations.
+
+See the full [Performance Test Results](./performance/20260215_ai_tool_questions/README.md).
+
 ## Agent Skills
 
 This project is an **Agent Skill**. Skills are an open standard for extending agent capabilities. A skill is a folder containing a `SKILL.md` file with instructions that the agent can follow when working on specific tasks.

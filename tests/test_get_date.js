@@ -45,7 +45,7 @@ console.log('Running tests...');
 
 // 4. Human readable format
 {
-  const output = runScript(['human']);
+  const output = runScript(['--human']);
   // Output format depends on locale but usually contains day name or month name
   assert.ok(output.length > 0, 'Human readable output should not be empty');
   console.log('✅ Human readable format passed');

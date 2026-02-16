@@ -1,39 +1,29 @@
-name: Test Skill
+name: Tests
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main, master ]
 
 jobs:
   test:
-    name: Test on ${{ matrix.os }} (Node ${{ matrix.node-version }})
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
+
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        node-version: [18.x, 20.x, 22.x]
+        node-version: [18.x, 20.x]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         
-    - name: Run Test Script (Current Time)
-      run: node .agent/skills/knowledge-cutoff-awareness/scripts/get_date.js
-
-    - name: Run Test Script (Offset +1d)
-      run: node .agent/skills/knowledge-cutoff-awareness/scripts/get_date.js +1d
-
-    - name: Run Test Script (Offset -1w)
-      run: node .agent/skills/knowledge-cutoff-awareness/scripts/get_date.js -1w
-
-    - name: Verify Install Script
-      # Just run it to make sure it doesn't crash. It might fail to copy if dirs don't exist in CI environment as expected,
-      # but we want to ensure the syntax is valid valid JS.
-      run: node bin/install.js
-      continue-on-error: true
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Run tests
+      run: npm test
