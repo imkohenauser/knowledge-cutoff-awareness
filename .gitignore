@@ -81,7 +81,7 @@ public
 .fusebox/
 
 # OS X
-.DS_Store
+**/.DS_Store
 
 # User settings
 .vscode/
