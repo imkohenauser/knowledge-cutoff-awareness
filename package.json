@@ -1,6 +1,6 @@
 {
   "name": "knowledge-cutoff-awareness",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Empower AI agents with current system time to bridge the knowledge cutoff gap.",
   "main": "index.js",
   "bin": {
@@ -34,6 +34,6 @@
     "ai-agent",
     "system-time"
   ],
-  "author": "Kohei Saito",
+  "author": "imkohenauser",
   "license": "MIT"
 }

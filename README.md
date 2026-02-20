@@ -1,6 +1,6 @@
 # Knowledge Cutoff Awareness
 
-> Created for **Google Antigravity IDE**.
+> An Agent Skill for **Google Antigravity IDE** and **Gemini CLI**.
 
 A lightweight skill set to give AI agents "current time awareness".
 
@@ -11,6 +11,17 @@ A lightweight skill set to give AI agents "current time awareness".
 - **Simple Integration**: Just place it under `.agent/skills` and it's ready to use.
 
 ## Installation
+
+### Via Gemini CLI
+If you are using Gemini CLI, you can install this skill directly using the built-in command:
+
+```bash
+# Install to the workspace scope (current project)
+gemini skills install https://github.com/imkohenauser/knowledge-cutoff-awareness.git --scope workspace
+
+# Or install globally (user scope) to use it across all projects
+gemini skills install https://github.com/imkohenauser/knowledge-cutoff-awareness.git
+```
 
 ### Via npm (Recommended)
 
@@ -68,6 +79,7 @@ This project is an **Agent Skill**. Skills are an open standard for extending ag
 References:
 - https://agentskills.io/home
 - https://antigravity.google/docs/skills
+- https://geminicli.com/docs/cli/creating-skills/
 
 ## License
 
