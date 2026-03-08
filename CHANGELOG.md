@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-03-08
+### Added
+- Support for [Vercel Skills CLI (skills.sh)](https://skills.sh): install with `npx skills add imkohenauser/knowledge-cutoff-awareness`.
+- README section "Via Skills CLI (skills.sh)" with install examples and options (`-g`, `-a cursor`, direct tree path).
+
+### Changed
+- README References: added https://skills.sh. Opening line now mentions Vercel Skills CLI (skills.sh) alongside Antigravity and Gemini CLI.
+
 ## [1.0.1] - 2026-02-20
 ### Added
 - Added support for installation via `gemini skills install` for seamless integration into Gemini CLI environments.

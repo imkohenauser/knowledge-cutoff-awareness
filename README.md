@@ -1,6 +1,6 @@
 # Knowledge Cutoff Awareness
 
-> An Agent Skill for **Google Antigravity IDE** and **Gemini CLI**.
+> An Agent Skill for **Vercel Skills CLI (skills.sh)**, **Google Antigravity IDE**, and **Gemini CLI**.
 
 A lightweight skill set to give AI agents "current time awareness".
 
@@ -43,6 +43,30 @@ mkdir -p .agent/skills
 git clone https://github.com/imkohenauser/knowledge-cutoff-awareness.git .agent/skills/knowledge-cutoff-awareness
 ```
 
+### Via Skills CLI (skills.sh)
+
+You can install this skill using the [Vercel Skills CLI](https://skills.sh) (`npx skills`), which supports Cursor, Claude Code, Codex, and many other agents:
+
+```bash
+# Install from this repository (skill is discovered under .agent/skills)
+npx skills add imkohenauser/knowledge-cutoff-awareness
+```
+
+Optional: install only this skill via a direct path, or target specific agents:
+
+```bash
+# Install to global scope (-g) and skip prompts (-y)
+npx skills add imkohenauser/knowledge-cutoff-awareness -g -y
+
+# Target specific agents (e.g. Cursor only)
+npx skills add imkohenauser/knowledge-cutoff-awareness -a cursor
+
+# Install from a direct path to the skill folder
+npx skills add https://github.com/imkohenauser/knowledge-cutoff-awareness/tree/main/.agent/skills/knowledge-cutoff-awareness
+```
+
+Discover more skills at [skills.sh](https://skills.sh).
+
 ## Usage
 
 Once installed, the agent will automatically recognize this skill (if the `.agent/skills` path is configured).
@@ -77,6 +101,7 @@ See the full [Performance Test Results](./performance/20260215_ai_tool_questions
 This project is an **Agent Skill**. Skills are an open standard for extending agent capabilities. A skill is a folder containing a `SKILL.md` file with instructions that the agent can follow when working on specific tasks.
 
 References:
+- https://skills.sh
 - https://agentskills.io/home
 - https://antigravity.google/docs/skills
 - https://geminicli.com/docs/cli/creating-skills/
