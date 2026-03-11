@@ -8,7 +8,7 @@ A lightweight skill set to give AI agents "current time awareness".
 - **Cross-Platform Support**: Works consistently on macOS, Linux, and Windows using a Node.js-based script.
 - **Unified Date Calculation**: Provides simple syntax for date manipulation (e.g., `+1d`, `-1w`) across all operating systems.
 - **Agent Optimization**: Helps LLMs accurately grasp the current system time, mitigating knowledge cutoff limitations.
-- **Simple Integration**: Just place it under `.agent/skills` and it's ready to use.
+- **Simple Integration**: After installation, the skill is placed under `.agent/skills` and is ready to use.
 
 ## Installation
 
@@ -71,6 +71,8 @@ Discover more skills at [skills.sh](https://skills.sh).
 
 Once installed, the agent will automatically recognize this skill (if the `.agent/skills` path is configured).
 See [SKILL.md](./skills/knowledge-cutoff-awareness/SKILL.md) for details.
+
+**v1.2.0 and later**: This package distributes only the skill installer and skill assets. If you previously used it as a library (e.g. `require('knowledge-cutoff-awareness')`), migrate to installing the skill via `npx knowledge-cutoff-awareness-install` or `npx skills add imkohenauser/knowledge-cutoff-awareness`.
 
 ## Performance
 

@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.2.0] - 2026-03-11
 ### Added
 - **Skill routing and instructions**: New content to improve when agents invoke this skill.
   - **When to Use / When NOT to Use**: Clear criteria and example queries so the skill is selected for current-time questions and not for fixed historical dates.
@@ -25,6 +25,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - `index.js` (library-style export). Distribution is installer-only; use `npx knowledge-cutoff-awareness-install` or `npx skills add` to install the skill.
+
+## [Unreleased]
 
 ## [1.1.0] - 2026-03-08
 ### Added
