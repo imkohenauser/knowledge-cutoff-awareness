@@ -2,7 +2,7 @@ const assert = require('assert');
 const { execSync } = require('child_process');
 const path = require('path');
 
-const scriptPath = path.resolve(__dirname, '../.agent/skills/knowledge-cutoff-awareness/scripts/get_date.js');
+const scriptPath = path.resolve(__dirname, '../skills/knowledge-cutoff-awareness/scripts/get_date.js');
 
 function runScript(args = []) {
   try {

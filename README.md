@@ -8,7 +8,7 @@ A lightweight skill set to give AI agents "current time awareness".
 - **Cross-Platform Support**: Works consistently on macOS, Linux, and Windows using a Node.js-based script.
 - **Unified Date Calculation**: Provides simple syntax for date manipulation (e.g., `+1d`, `-1w`) across all operating systems.
 - **Agent Optimization**: Helps LLMs accurately grasp the current system time, mitigating knowledge cutoff limitations.
-- **Simple Integration**: Just place it under `.agent/skills` and it's ready to use.
+- **Simple Integration**: After installation, the skill is placed under `.agent/skills` and is ready to use.
 
 ## Installation
 
@@ -48,7 +48,7 @@ git clone https://github.com/imkohenauser/knowledge-cutoff-awareness.git .agent/
 You can install this skill using the [Vercel Skills CLI](https://skills.sh) (`npx skills`), which supports Cursor, Claude Code, Codex, and many other agents:
 
 ```bash
-# Install from this repository (skill is discovered under .agent/skills)
+# Install from this repository (skill is discovered under `skills/`)
 npx skills add imkohenauser/knowledge-cutoff-awareness
 ```
 
@@ -62,7 +62,7 @@ npx skills add imkohenauser/knowledge-cutoff-awareness -g -y
 npx skills add imkohenauser/knowledge-cutoff-awareness -a cursor
 
 # Install from a direct path to the skill folder
-npx skills add https://github.com/imkohenauser/knowledge-cutoff-awareness/tree/main/.agent/skills/knowledge-cutoff-awareness
+npx skills add https://github.com/imkohenauser/knowledge-cutoff-awareness/tree/main/skills/knowledge-cutoff-awareness
 ```
 
 Discover more skills at [skills.sh](https://skills.sh).
@@ -70,7 +70,9 @@ Discover more skills at [skills.sh](https://skills.sh).
 ## Usage
 
 Once installed, the agent will automatically recognize this skill (if the `.agent/skills` path is configured).
-See [SKILL.md](./.agent/skills/knowledge-cutoff-awareness/SKILL.md) for details.
+See [SKILL.md](./skills/knowledge-cutoff-awareness/SKILL.md) for details.
+
+**v1.2.0 and later**: This package distributes only the skill installer and skill assets. If you previously used it as a library (e.g. `require('knowledge-cutoff-awareness')`), migrate to installing the skill via `npx knowledge-cutoff-awareness-install` or `npx skills add imkohenauser/knowledge-cutoff-awareness`.
 
 ## Performance
 
@@ -80,7 +82,7 @@ Does it actually help? Yes. We tested the impact of this skill on an AI agent's 
 The agent relied on outdated training data.
 
 <p align="center">
-  <img src="./performance/20260215_ai_tool_questions/screenshot/en_default.png" alt="Screenshot" width="600">
+  <img src="./research/20260215_ai_tool_questions/screenshot/en_default.png" alt="Screenshot" width="600">
   <br>
   <em>(No KCA, Model: Gemini 3 Pro High)</em>
 </p>
@@ -89,12 +91,12 @@ The agent relied on outdated training data.
 The agent recognized the date, performed a web search, and provided accurate, up-to-date recommendations.
 
 <p align="center">
-  <img src="./performance/20260215_ai_tool_questions/screenshot/en_kca.png" alt="Screenshot" width="600">
+  <img src="./research/20260215_ai_tool_questions/screenshot/en_kca.png" alt="Screenshot" width="600">
   <br>
   <em>(With KCA, Model: Gemini 3 Pro High)</em>
 </p>
 
-See the full [Performance Test Results](./performance/20260215_ai_tool_questions/README.md).
+See the full [Performance Test Results](./research/20260215_ai_tool_questions/README.md).
 
 ## Agent Skills
 

@@ -1,15 +1,13 @@
 {
   "name": "knowledge-cutoff-awareness",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "Empower AI agents with current system time to bridge the knowledge cutoff gap.",
-  "main": "index.js",
   "bin": {
-    "knowledge-cutoff-awareness-install": "./bin/install.js"
+    "knowledge-cutoff-awareness-install": "./cli/install.js"
   },
   "files": [
-    ".agent",
-    "bin",
-    "index.js",
+    "skills",
+    "cli",
     "README.md"
   ],
   "repository": {

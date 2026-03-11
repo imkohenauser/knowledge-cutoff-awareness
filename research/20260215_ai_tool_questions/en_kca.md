@@ -29,7 +29,7 @@ I'm evaluating how best to approach the request for AI tool recommendations. My 
 
 I'm now focusing on the implications of the current date, February 16, 2026. My training data's cutoff is a concern, so I'm analyzing the knowledge-cutoff-awareness skill for guidance on handling this discrepancy. It's likely that I will need to search the web for the most current information, as well, for tools available in 2026.
 
-> Analyzed `.agent/skills/knowledge-cutoff-awareness/SKILL.md#L1-32`
+> Analyzed `skills/knowledge-cutoff-awareness/SKILL.md#L1-32`
 
 ### Step 3: Re-evaluating Date Dependency (<1s)
 
