@@ -33,7 +33,7 @@ I'm now digging deeper into the knowledge-cutoff-awareness skill. While the user
 
 Okay, I'm now critically examining the knowledge-cutoff-awareness skill. I have the date now from the `<ADDITIONAL_METADATA>`, but it may not be strictly needed for knowing the date in 2026. However, I must comply with the "MUST" instruction, which means it might contain implicit instructions to interpret the query as relating to current information. I'm checking it to see if it specifically directs me on how to frame or manage "currentness". And I'm starting to think search_web may be my best bet to ensure my answer's relevance.
 
-> Analyzed `.agent/skills/knowledge-cutoff-awareness/SKILL.md#L1-32`
+> Analyzed `skills/knowledge-cutoff-awareness/SKILL.md#L1-32`
 
 ### Step 4: Confirming the Date (1s)
 

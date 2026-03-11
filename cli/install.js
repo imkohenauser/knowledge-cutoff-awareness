@@ -2,8 +2,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Source directory: .agent/skills/knowledge-cutoff-awareness inside the package
-const sourceDir = path.join(__dirname, '..', '.agent', 'skills', 'knowledge-cutoff-awareness');
+// Source directory: skills/knowledge-cutoff-awareness inside the package
+const sourceDir = path.join(__dirname, '..', 'skills', 'knowledge-cutoff-awareness');
 
 // Target directory: .agent/skills/knowledge-cutoff-awareness in the current working directory
 // Assumes user runs this from their project root
